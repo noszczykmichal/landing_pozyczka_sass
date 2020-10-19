@@ -1,2 +1,76 @@
+* {
+  box-sizing: border-box;
+  color: #f5f5f5; }
+
 body {
-  background-color: darkred; }
+  margin: 0;
+  font-family: "Open Sans", sans-serif; }
+
+header {
+  position: absolute;
+  width: 100%; }
+  header .container .main-logo {
+    display: inline-block;
+    margin-left: 30px; }
+    header .container .main-logo i {
+      color: #ecd407;
+      margin-top: 10px;
+      font-size: 2rem;
+      float: left;
+      margin-right: 0.8rem; }
+    header .container .main-logo p {
+      margin-top: 5px;
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 700; }
+  header .container .header-contact {
+    width: 300px;
+    float: right; }
+    header .container .header-contact i {
+      margin-top: 10px;
+      font-size: 2rem;
+      float: left;
+      margin-right: 0.8rem;
+      transform: rotate(100deg); }
+    header .container .header-contact span {
+      display: block;
+      margin-top: 5px;
+      font: 0.8 rem; }
+
+.formSection {
+  height: 110vh;
+  padding: 10rem 0rem;
+  background-image: url("../img/background.png");
+  background-size: cover; }
+  .formSection .container {
+    float: right;
+    width: 34rem;
+    padding: 5rem; }
+
+form {
+  padding: 1rem;
+  background-color: #001d8a; }
+  form .yellowFont {
+    color: #ecd407; }
+  form input:not([type="submit"]) {
+    display: block;
+    height: 2.5rem;
+    width: 100%;
+    margin: 0.75rem 0rem;
+    border-radius: 5px;
+    color: #000000; }
+  form textarea {
+    width: 100%;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 5px; }
+  form input[type="submit"] {
+    display: block;
+    height: 2.5rem;
+    width: 100%;
+    margin: 0.75rem 0rem;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #ecd407;
+    font-weight: 700;
+    border-color: #ecd407; }

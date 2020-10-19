@@ -1,0 +1,16 @@
+@mixin icons-header{
+    margin-top: 10px;
+    font-size: 2rem;
+    float: left;
+    margin-right: 0.8rem;
+}
+
+@mixin stylesForInputs{
+    display: block;
+    height: 2.5rem;
+    width: 100%;
+    margin: 0.75rem 0rem;
+    border-radius: 5px;
+    color: #000000;
+
+}
