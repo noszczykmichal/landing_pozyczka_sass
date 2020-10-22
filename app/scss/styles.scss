@@ -1,16 +1,19 @@
 @import 'mixins';
 @import 'variables';
 
+/*-------- General Styles --------*/
+
 *{
     box-sizing: border-box;
-    color: $mainFontColor;
 }
 
 body{
     margin: 0;
     font-family: $mainFont;
+    color: $mainFontColor;
 }
 
+/*-------- Main Header Styles --------*/
 
 header{
     position: absolute;
@@ -50,16 +53,18 @@ header{
     }
 }
 
+/*-------- Section Form Styles --------*/
+
 .formSection{
     height: 110vh;
     padding: 10rem 0rem;
     background-image: url('../img/background.png');
     background-size: cover;
+    color: $mainFontColor;
 
     .container{
         float: right;
         width: 34rem;
-        // margin-right: 4rem;
         padding: 5rem;
     
     }
@@ -91,5 +96,79 @@ form{
         font-weight: 700;
         border-color: #ecd407;
         
+    }
+}
+
+/*-------- Section About --------*/
+
+.aboutUs{
+    padding: 5rem 0rem;
+    background-color: #eaecf0;
+    color: $sectionAboutFontColor;
+
+    .counters{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+//zastanowić się czy ten divy experience i clients to nie dać na tej samej klasie
+//bo chyba nie ma powodu żeby były na różnych + to samo jeśli chodzi o te paragrafy z opisami
+        .experience, .clients{
+            display: inline-block;
+            padding: 0rem 10rem;
+            text-align: center;
+        }
+
+        p.counter{
+            @include paragraphWithCounter;
+            margin: 0 auto;
+        }
+
+        .experience-p, .clients-p{
+            font-size: 1.5rem;
+        }
+    }
+
+    .container{
+        width: 100%;
+        padding: 0rem 3rem;
+        .articles{
+            display: inline-block;
+            width: 33%;
+            padding: 0rem 3rem;
+        }
+    }
+}
+
+.articles{
+    table{
+        width: 100%;
+        line-height: 1.75rem;
+
+        caption{
+            caption-side: top;
+            margin: 1rem 0rem;
+        }
+
+        td{
+            border-bottom: 1px solid #808080;
+                
+        }
+       
+    }
+    
+    h2{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    p{
+        text-align: justify;
+        line-height: 1.75rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: $colorLinks;
     }
 }
