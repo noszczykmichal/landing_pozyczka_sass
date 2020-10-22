@@ -25,7 +25,7 @@ header{
             margin-left: 30px;
 
             i{  
-                color: $colorOfIcons;
+                color: $yellowIcons;
                @include icons-header;
             }
 
@@ -72,11 +72,11 @@ header{
 
 form{
     padding: 1rem;
-    background-color: #001d8a;
+    background-color: $formBackgroundColor;
     
 
     .yellowFont{
-        color: #ecd407;
+        color: $yellowIcons;
     }
 
     input:not([type="submit"]){
@@ -92,18 +92,18 @@ form{
 
     input[type="submit"]{
         @include stylesForInputs;
-        background-color: #ecd407;
+        background-color: $bottonSubmit;
         font-weight: 700;
-        border-color: #ecd407;
+        border-color: $bottonSubmit;
         
     }
 }
 
-/*-------- Section About --------*/
+/*-------- Section About Styles--------*/
 
 .aboutUs{
     padding: 5rem 0rem;
-    background-color: #eaecf0;
+    background-color: $backgroundColorSectionAbout;
     color: $sectionAboutFontColor;
 
     .counters{
@@ -111,27 +111,26 @@ form{
         display: flex;
         justify-content: center;
         margin-bottom: 4rem;
-//zastanowić się czy ten divy experience i clients to nie dać na tej samej klasie
-//bo chyba nie ma powodu żeby były na różnych + to samo jeśli chodzi o te paragrafy z opisami
+
         .experience, .clients{
             display: inline-block;
             padding: 0rem 10rem;
             text-align: center;
         }
 
-        p.counter{
+        p.counterCount{
             @include paragraphWithCounter;
             margin: 0 auto;
         }
 
-        .experience-p, .clients-p{
+        .experienceP, .clientsP{
             font-size: 1.5rem;
         }
     }
 
     .container{
         width: 100%;
-        padding: 0rem 3rem;
+        padding: 3rem 3rem;
         .articles{
             display: inline-block;
             width: 33%;
@@ -172,3 +171,29 @@ form{
         color: $colorLinks;
     }
 }
+
+/*-------- Footer Style --------*/
+
+footer{
+    height: 10rem;
+    background-color: $backgroundColorFooter;
+   
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        i{
+            color: $yellowIcons;
+        }
+     
+        .contact{
+            padding: 2.5rem;
+            width: 45%;
+            display: inline-block;
+            text-align: center;
+        }
+    }    
+}
+
+
