@@ -15,6 +15,20 @@
 
 }
 
+<<<<<<< HEAD
+=======
+@mixin styleForTextArea{
+    width: 100%;
+    color: #000000;
+    font-family: $mainFont;
+    border-radius: 5px;
+}
+
+@mixin tableData{
+    border-bottom: 1px solid #808080;
+}
+
+>>>>>>> beta
 @mixin paragraphWithCounter{
     display: flex;
     height: 5rem;

@@ -84,10 +84,7 @@ form{
     }
 
     textarea{
-        width: 100%;
-        color: #000000;
-        font-family: $mainFont;
-        border-radius: 5px;
+        @include styleForTextArea;
     }
 
     input[type="submit"]{
@@ -109,12 +106,11 @@ form{
     .counters{
         width: 100%;
         display: flex;
-        justify-content: center;
         margin-bottom: 4rem;
 
         .experience, .clients{
             display: inline-block;
-            padding: 0rem 10rem;
+            margin: 0 auto;
             text-align: center;
         }
 
@@ -131,10 +127,16 @@ form{
     .container{
         width: 100%;
         padding: 3rem 3rem;
+        display: flex;
+        justify-content: space-between;
+
+        .quotes{
+            margin-top: 2rem;
+        }
         .articles{
             display: inline-block;
             width: 33%;
-            padding: 0rem 3rem;
+            padding: 0rem 2rem;
         }
     }
 }
@@ -150,7 +152,7 @@ form{
         }
 
         td{
-            border-bottom: 1px solid #808080;
+            @include tableData;
                 
         }
        
@@ -196,4 +198,78 @@ footer{
     }    
 }
 
+/*-------- Responsive css --------*/
 
+@media(max-width: 992px){
+    .aboutUs{
+        .container{
+            padding: 3rem 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            .articles{
+                width: 45%;
+                
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .formSection{
+        .container{
+           float: none;
+           margin: 0 auto; 
+        }
+    }
+
+    .aboutUs{
+        .counters{
+            display: block;
+
+            .experience{
+                margin-bottom: 5rem;;
+            }
+            .experience, .clients{
+                width: 100%;
+            }
+        }
+
+        .container{
+            padding: 0rem 3rem;
+            display: block;
+
+            .quotes{
+                padding: 0rem 4rem;
+            }
+
+            .articles{
+                width: 100%;
+                padding-bottom: 2rem; 
+            }
+        }
+    }
+    
+}
+
+@media(max-width: 576px){
+    header{
+        .container{
+            .main-logo,.header-contact{
+                width: 90%;
+                float: none;
+                margin-left: 30px;
+            }
+        }
+    }
+
+    footer{
+        .container{
+            display: block;
+            text-align: center;
+            .contact{
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+    }
+}
