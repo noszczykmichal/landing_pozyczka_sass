@@ -189,9 +189,13 @@ footer {
     width: 90%;
     float: none;
     margin-left: 30px; }
+  .formSection .container {
+    width: 90%; }
+  .aboutUs .container .articles {
+    padding: 1rem 0rem 0rem 0rem; }
   footer .container {
     display: block;
     text-align: center; }
     footer .container .contact {
-      width: 100%;
+      width: 90%;
       padding: 1rem; } }
