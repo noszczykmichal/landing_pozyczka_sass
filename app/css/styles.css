@@ -89,18 +89,10 @@ form {
   .aboutUs .counters {
     width: 100%;
     display: flex;
-<<<<<<< HEAD
-    justify-content: center;
-    margin-bottom: 4rem; }
-    .aboutUs .counters .experience, .aboutUs .counters .clients {
-      display: inline-block;
-      padding: 0rem 10rem;
-=======
     margin-bottom: 4rem; }
     .aboutUs .counters .experience, .aboutUs .counters .clients {
       display: inline-block;
       margin: 0 auto;
->>>>>>> beta
       text-align: center; }
     .aboutUs .counters p.counterCount {
       display: flex;
@@ -117,13 +109,6 @@ form {
       font-size: 1.5rem; }
   .aboutUs .container {
     width: 100%;
-<<<<<<< HEAD
-    padding: 3rem 3rem; }
-    .aboutUs .container .articles {
-      display: inline-block;
-      width: 33%;
-      padding: 0rem 3rem; }
-=======
     padding: 3rem 3rem;
     display: flex;
     justify-content: space-between; }
@@ -133,7 +118,6 @@ form {
       display: inline-block;
       width: 33%;
       padding: 0rem 2rem; }
->>>>>>> beta
 
 .articles table {
   width: 100%;
@@ -171,8 +155,6 @@ footer {
       width: 45%;
       display: inline-block;
       text-align: center; }
-<<<<<<< HEAD
-=======
 
 /*-------- Responsive css --------*/
 @media (max-width: 992px) {
@@ -217,4 +199,3 @@ footer {
     footer .container .contact {
       width: 90%;
       padding: 1rem; } }
->>>>>>> beta
